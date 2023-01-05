@@ -8,7 +8,7 @@ export default function Page() {
     useEffect(()=>{
         const da=async()=>{
             const headers ={'authorization':localStorage.getItem('token')}
-            const d =await axios.post('http://localhost:3000/rp',null,{headers})
+            const d =await axios.post('https://backend-xcfn.onrender.com/rp',null,{headers})
             toast.success(d.data)
         }
         da()
