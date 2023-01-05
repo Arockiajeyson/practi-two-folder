@@ -27,8 +27,7 @@ export default function Register() {
                 // refer.current.style.backgroundColor='red'
                 refer.current.style.border='2px solid black'
                 refer2.current.style.border='2px solid black'
-                const res =await axios.post('http://localhost:3000/register',{email,password})
-                console.log(res.data)
+                const res =await axios.post('https://backend-xcfn.onrender.com/register',{email,password})
                 if(res.data !='successfully Register'){
                     return toast.error(res.data)
                 }else{

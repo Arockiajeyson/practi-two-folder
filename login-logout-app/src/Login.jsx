@@ -19,7 +19,7 @@ export default function Login() {
     const hand =async()=>{
         const {email,password}=state
         console.log(state)
-        const res =await axios.post('http://localhost:3000/login',{email,password})
+        const res =await axios.post('https://backend-xcfn.onrender.com/login',{email,password})
         if(res.data =='invalid password'){
             refer.current.style.border='2px solid red'
             toast.error(res.data)
