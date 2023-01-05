@@ -1,10 +1,10 @@
 
 import './App.css';
-
+import RouterDom from './router';
 function App() {
   return (
     <div className="App">
-      hello world
+      <RouterDom/>
     </div>
   );
 }
