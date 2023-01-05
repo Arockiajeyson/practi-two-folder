@@ -8,7 +8,7 @@ app.use(express.json())
 app.use('/',require('./routes'))
 app.use('/rp',dat)
 app.listen(3000,async()=>{
-    await mongoose.connect('mongodb://localhost/prtsss')
+    await mongoose.connect('mongodb+srv://Aro:aro123@arockiajeyson.aswzaya.mongodb.net/?retryWrites=true&w=majority')
     console.log('connected')
     console.log('port up')
 })
